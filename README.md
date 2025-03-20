@@ -30,9 +30,9 @@ written to from using this app.
 
 ### Note
 
-Files are saved in ```$USER/.local/password_manager/...```
+Files are saved in ```$HOME/.local/share/password_manager/...```
 
-Therefore, if the .local file does not exist the program won't work.
+Therefore if ```$HOME``` is not set or ```$HOME/.local``` does not exist. This application will not work.
 
 ## TODO
 
