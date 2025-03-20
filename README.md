@@ -15,11 +15,11 @@ It does this using the OPENSSL EVP library
 
 ## TODO
 
-[x] Setup Login
-[x] Create Dashboard
-[x] Save passwords to file
-[x] Salt Master Password 
-[x] Encrypt Master Password
-[ ] Encrypt Passwords file
-[ ] Decrypt Passwords file
+- [x] Setup Login
+- [x] Create Dashboard
+- [x] Save passwords to file
+- [x] Salt Master Password 
+- [x] Encrypt Master Password
+- [ ] Encrypt Passwords file
+- [ ] Decrypt Passwords file
 
