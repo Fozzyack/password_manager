@@ -32,7 +32,7 @@ written to from using this app.
 
 Files are saved in ```$HOME/.local/share/password_manager/...```
 
-Therefore if ```$HOME``` is not set or ```$HOME/.local``` does not exist. This application will not work.
+Therefore if ```$HOME``` is not set or ```$HOME/.local/share``` does not exist. This application will not work.
 
 ## TODO
 
