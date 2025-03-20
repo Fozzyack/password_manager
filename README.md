@@ -1,6 +1,14 @@
 # Password Manager
 
+## Overview
+
 A simple password manager that stores or your passwords locally (and encrypts them).
+
+## Why
+
+I can't remember my passwords and I would like to save them locally to my computer rather than use an external 3rd party
+source. I would Also like to store my passwords in some, unreadable format such that they can only be read, deleted and
+written to from using this app.
 
 ## How it works
 
@@ -10,6 +18,7 @@ A simple password manager that stores or your passwords locally (and encrypts th
   passwords.
 
 ### Note:
+
 - Whilst the files are encrypted users are still able to delete the password file itself causing loss of data.
 - A least the passwords are encrypted.
 
@@ -18,6 +27,12 @@ A simple password manager that stores or your passwords locally (and encrypts th
 1. In the build directory run ```cmake ..``` and it should create a makefile.
 2. In the build directory run ```make``` and it should create an executable.
 3. Run the program using ```./main``` .
+
+### Note
+
+Files are saved in ```$USER/.local/password_manager/...```
+
+Therefore, if the .local file does not exist the program won't work.
 
 ## TODO
 
