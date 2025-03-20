@@ -15,8 +15,9 @@ A simple password manager that stores or your passwords locally (and encrypts th
 
 ## Installation
 
-1. In the build directory run ```cmake``` and it should create an executable.
-2. Run the program using ```./main``` .
+1. In the build directory run ```cmake ..``` and it should create a makefile.
+2. In the build directory run ```make``` and it should create an executable.
+3. Run the program using ```./main``` .
 
 ## TODO
 
