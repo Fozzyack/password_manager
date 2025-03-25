@@ -1,6 +1,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <string>
 
 /*HEADER FILES */
 #include "src/headers/passwords.h"
@@ -43,7 +44,7 @@ void print_menu() {
 
 
 
-void menu(bool & logged_in) {
+void menu(bool &logged_in, std::string &password) {
 
     std::string choice;
 
@@ -104,14 +105,15 @@ void menu(bool & logged_in) {
 int main_loop() {
 
     bool logged_in = false;
+    std::string password;
 
     system("clear");
     while(true) {
         if (!logged_in) {
-            login(logged_in);
+            login(logged_in, password);
         }
         else {
-            menu(logged_in);
+            menu(logged_in, password);
         }
     }
     return -1;

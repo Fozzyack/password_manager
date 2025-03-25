@@ -7,7 +7,6 @@
 
 
 
-
 int make_login(std::string &password, std::string &program_data, bool &logged_in) {
 
     std::filesystem::create_directory(program_data);
@@ -24,9 +23,8 @@ int make_login(std::string &password, std::string &program_data, bool &logged_in
     return 0;
 }
 
-void login(bool & logged_in) {
+void login(bool &logged_in, std::string &password) {
 
-    std::string password;
 
     //Check if HOME Exists
     const char *home = std::getenv("HOME");
@@ -69,5 +67,6 @@ void login(bool & logged_in) {
             std::cout << "Incorrect Password please try again" << std::endl;
         }
     }
+
 }
 
