@@ -4,6 +4,10 @@
 
 A simple password manager that stores or your passwords locally (and encrypts them).
 
+## If you'd like to use
+
+Passwords are saved on your device LOCALLY. So no need to worry about someone stealing your passwords through the web.
+
 ## Why
 
 I can't remember my passwords and I would like to save them locally to my computer rather than use an external 3rd party

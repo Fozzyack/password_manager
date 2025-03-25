@@ -63,7 +63,6 @@ void menu(bool &logged_in, std::string &password) {
         case 1:
             system("clear");
             std::cout << "Get Passwords" << std::endl;
-
             print_title();
             get_passwords("PASSWORDS");
             enter_to_continue();
