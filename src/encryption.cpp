@@ -7,6 +7,10 @@
 #include <vector>
 
 
+/*
+ * Generates the salt for the password
+ * Salt is 200 chars of size
+ */
 std::string generate_salt() {
 
     const char alphanum[] = 
@@ -25,6 +29,9 @@ std::string generate_salt() {
 
 }
 
+/*
+ * Generates a hash for the password using the password and the salt
+ */
 std::vector<unsigned char> generate_hash(std::string salt, std::string password) {
 
     EVP_MD_CTX *mdctx;
@@ -68,6 +75,9 @@ std::vector<unsigned char> generate_hash(std::string salt, std::string password)
     return hash;
 }
 
+/*
+ * Converts the hash to a string so that it can be saved to a text file
+ */
 std::string hash_to_string(std::vector<unsigned char> &hash) {
     std::stringstream hash_ss;
     for(unsigned char byte: hash) {
@@ -75,3 +85,7 @@ std::string hash_to_string(std::vector<unsigned char> &hash) {
     }
     return hash_ss.str();
 }
+
+/*
+ * FUNCTION FOR HASHING FILE - ADD BELOW
+ */

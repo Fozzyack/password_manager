@@ -2,12 +2,20 @@
 #include <iostream>
 #include "headers/userinput.h"
 
+/*
+ * Gets the path for the directory
+ * where files are saved
+ */
 std::string get_path() {
     const char *home = std::getenv("HOME");
     std::string path = std::string(home) + "/.local/share/password_manager/";
     return path;
 }
 
+/*
+ * Function that adds to the passwords
+ * file
+ */
 int add_to_pwds(std::string &purpose, std::string &password) {
         std::ofstream outf { get_path() + "pws.txt", std::ios::app };
         if(!outf) {
@@ -22,6 +30,10 @@ int add_to_pwds(std::string &purpose, std::string &password) {
         return 0;
 }
 
+/*
+ * UI that users enter their password 
+ * and purpose for the password in
+ */
 int add_password() {
     std::cout << "ADD PASSWORD" << std::endl;
     while(true){
@@ -63,6 +75,9 @@ int add_password() {
 
 }
 
+/*
+ * Reads from passwords file
+ */
 int get_passwords(std::string title) {
 
 
@@ -90,6 +105,11 @@ int get_passwords(std::string title) {
     return 0;
 }
 
+/*
+ * Deletes from passwords file. Does this buy writing to
+ * another file, deleting the old file, then renaming the 
+ * new file.
+ */
 int delete_password() {
 
     get_passwords("SELECT WHICH PASSWORD TO REMOVE");
@@ -124,18 +144,6 @@ int delete_password() {
     enter_to_continue();
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

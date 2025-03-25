@@ -8,8 +8,11 @@
 #include "src/headers/userinput.h"
 #include "src/headers/login.h"
 
+
+/*
+ * Just Prints out the title
+ */
 void print_title() {
-                                                                       
     std::cout << "\n"
 
 "██████╗  █████╗ ███████╗███████╗██╗    ██╗ ██████╗ ██████╗ ██████╗     \n"
@@ -30,6 +33,9 @@ void print_title() {
         "==========================================================================" << std::endl;
 }
 
+/*
+ * Prints Menu Options
+ */
 void print_menu() {
     print_title();
     std::cout << "OPTIONS" << std::endl;
@@ -43,7 +49,9 @@ void print_menu() {
 }
 
 
-
+/*
+ * Function that prints out and adds interactivity to the main menu
+ */
 void menu(bool &logged_in, std::string &password) {
 
     std::string choice;
@@ -100,7 +108,9 @@ void menu(bool &logged_in, std::string &password) {
     system("clear");
 }
 
-
+/*
+ * The main loop that runs
+ */
 int main_loop() {
 
     bool logged_in = false;
